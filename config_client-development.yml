@@ -1,0 +1,15 @@
+server:
+  port: 8088
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:tampfievk50/config-server.git
+          clone-on-start: true
+          default-label: master
+          basedir: /config
+  security:
+    user:
+      name: sirtam
+      password: admin
